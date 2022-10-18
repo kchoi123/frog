@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  myapp:
+    image: mykchoisite:10-17-2022
+    deploy:
+      replicas: 5
+  mylb:
+    container_name: mylb
+    image: mylb:latest
+    ports:
+      - 80:80

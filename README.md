@@ -95,10 +95,6 @@ optional arguments:
 
 <br>
 
-![scripts and check file](/images/7.png)
-> Run the destroy command
+<img src="./images/7.png" width="400" height="200" />  <img src="./images/8.png" width="400" height="200" />
 
-<br>
-
-![scripts and check file](/images/8.png)
-> Validate that all containers have been stopped and removed
+> Run the destroy command and validate that all containers have been stopped and removed

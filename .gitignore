@@ -1,3 +1,4 @@
 .DS_Store
 docker_build/*
 tmp/*
+artifactory_api_key

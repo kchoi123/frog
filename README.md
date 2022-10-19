@@ -71,12 +71,34 @@ optional arguments:
 <hr>
 
 ## What you should see
+<p>Video is in .mov format. Availble to watch on this repository. </p>
 
-docker ps -a
+[![Watch the video](./screen.mov) 
 
-docker images
+<br>
 
-localhost:80
-refresh with cmd+shift+r
+<img src="./images/1.png" width="400" height="200" />  <img src="./images/2.png" width="400" height="200" />
 
-[![Watch the video](./screen.mov)
+> Navigating to the scripts directory and validating commands.
+
+<br>
+
+<img src="./images/3.png" width="400" height="200" />  <img src="./images/4.png" width="400" height="200" />
+
+> Run the clean command then deploy. Validate containers are up and images pulled from JFrog Artifactory.
+
+<br>
+
+<img src="./images/5.png" width="400" height="200" />  <img src="./images/6.png" width="400" height="200" />
+
+> Validate with browser and check different hostnames
+
+<br>
+
+![scripts and check file](/images/7.png)
+> Run the destroy command
+
+<br>
+
+![scripts and check file](/images/8.png)
+> Validate that all containers have been stopped and removed

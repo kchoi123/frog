@@ -14,8 +14,10 @@ docker rm $(docker ps -a -q)
 
 docker rmi $(docker images -q)
 
+docker system prune -f
+
 echo ----- clean docker -----
 
 date_now=$(date "+%F-%H-%M-%S")
 
-echo $date_now
+echo "Your Docker environment is clean as of " $date_now

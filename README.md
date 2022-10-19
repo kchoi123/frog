@@ -71,3 +71,12 @@ optional arguments:
 <hr>
 
 ## What you should see
+
+docker ps -a
+
+docker images
+
+localhost:80
+refresh with cmd+shift+r
+
+[![Watch the video](./screen.mov)

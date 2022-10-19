@@ -43,13 +43,13 @@ class jfrog(object):
     def build(self):
         print("Always run this python script indside scripts directory, please!")
 
-        buildBashCommand = "bash ./build.sh"
+        build_bash_command = "bash ./build.sh"
 
         # testing the relative path
         # process = subprocess.Popen(["ls"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
         with open ('../tmp/build_stdout.txt', 'w') as f: # This can be output for splunk, nr logging, etc
-            process = subprocess.Popen(buildBashCommand.split(), stdout=f, stderr=subprocess.DEVNULL) # We can change DEVNULL to PIPE for errors
+            process = subprocess.Popen(build_bash_command.split(), stdout=f, stderr=subprocess.DEVNULL) # We can change DEVNULL to PIPE for errors
             result = process.communicate()
 
             print("BUILD is finished. stderr is: ", result)
@@ -57,13 +57,13 @@ class jfrog(object):
     def clean(self):
         print("Always run this python script indside scripts directory, please!")
 
-        cleanBashCommand = "bash ./clean_start.sh"
+        clean_bash_command = "bash ./clean_start.sh"
 
         # testing the relative path
         # process = subprocess.Popen(["ls"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
         with open ('../tmp/clean_stdout.txt', 'w') as f: # This can be output for splunk, nr logging, etc
-            process = subprocess.Popen(cleanBashCommand.split(), stdout=f, stderr=subprocess.DEVNULL) # We can change DEVNULL to PIPE for errors
+            process = subprocess.Popen(clean_bash_command.split(), stdout=f, stderr=subprocess.DEVNULL) # We can change DEVNULL to PIPE for errors
             result = process.communicate()
 
             print("CLEAN is finished. stderr is: ", result)
@@ -71,10 +71,10 @@ class jfrog(object):
     def deploy(self):
         print("This is going to deploy using docker-compose")
 
-        deployBashCommand = "docker-compose -f ../docker-compose.yml up -d"
+        deploy_bash_command = "docker-compose -f ../docker-compose.yml up -d"
 
         with open ('../tmp/deploy_stdout.txt', 'w') as f: # This can be output for splunk, nr logging, etc
-            process = subprocess.Popen(deployBashCommand.split(), stdout=f, stderr=subprocess.DEVNULL) # We can change DEVNULL to PIPE for errors
+            process = subprocess.Popen(deploy_bash_command.split(), stdout=f, stderr=subprocess.DEVNULL) # We can change DEVNULL to PIPE for errors
             result = process.communicate()
 
             print("DEPLOY is finished. stderr is: ", result)
@@ -82,15 +82,13 @@ class jfrog(object):
     def destroy(self):
         print("This is going to bring down docker-compose")
 
-        destroyBashCommand = "docker-compose -f ../docker-compose.yml down"
+        destroy_bash_command = "docker-compose -f ../docker-compose.yml down"
 
         with open ('../tmp/destroy_stdout.txt', 'w') as f: # This can be output for splunk, nr logging, etc
-            process = subprocess.Popen(destroyBashCommand.split(), stdout=f, stderr=subprocess.DEVNULL) # We can change DEVNULL to PIPE for errors
+            process = subprocess.Popen(destroy_bash_command.split(), stdout=f, stderr=subprocess.DEVNULL) # We can change DEVNULL to PIPE for errors
             result = process.communicate()
 
             print("DESTROY is finished. stderr is: ", result)
-
-
 
 if __name__ == '__main__':
     jfrog()

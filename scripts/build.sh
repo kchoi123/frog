@@ -10,7 +10,7 @@ docker build ../docker_build/ -t kchoijfrog.jfrog.io/jfrog/temp:$date_now
 
 echo Be sure to authenticate to your jfrog instance!!!
 
-docker login -u k3vinch0i@gmail.com kchoijfrog.jfrog.io
+docker login -u k3vinch0i@gmail.com kchoijfrog.jfrog.io -p $API_KEY
 
 docker push kchoijfrog.jfrog.io/jfrog/temp:$date_now
 

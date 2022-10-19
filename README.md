@@ -25,7 +25,7 @@ export API_KEY={api key will be provided}
 > This project has only been tested on <b><u>macOS Monterey with Intel Chip</u></b>.
 
 <br>
-<p>Commands in this repo can vary depending on macOS M1 chips and Windows versions. Virtualenv can be a way of standarizing and can be developed in the future.</p>
+<p>Commands in this repo can vary depending on macOS M1 chips and Windows versions. Virtualenv can be a way of standardizing and can be developed in the future.</p>
 <br>
 <hr>
 

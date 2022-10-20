@@ -101,4 +101,4 @@ optional arguments:
 
 # Diagram
 
-<img src="./images/draw.png" width="400" height="200" />  <img src="./images/8.png" width="400" height="200" />
+<img src="./images/draw.png" width="500" height="300" />

@@ -98,3 +98,7 @@ optional arguments:
 <img src="./images/7.png" width="400" height="200" />  <img src="./images/8.png" width="400" height="200" />
 
 > Run the destroy command and validate that all containers have been stopped and removed
+
+# Diagram
+
+<img src="./images/draw.png" width="400" height="200" />  <img src="./images/8.png" width="400" height="200" />
